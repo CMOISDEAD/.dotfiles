@@ -77,6 +77,7 @@ function AppItem(app: Application): Box<any, any> {
         if (clickCount === 2) {
             increment_launch_count(app.name);
             app.launch();
+            App.closeWindow("sideleft");
             clickCount = 0;
         }
     });
@@ -113,8 +114,8 @@ export const Applauncher = () => {
         on_accept: () => {
             const results = applications.filter((item) => item.visible);
             if (results[0]) {
-
                 results[0].attribute.app.launch();
+                App.closeWindow("sideleft");
             }
         },
 
@@ -146,8 +147,6 @@ export const Applauncher = () => {
         ],
         setup: (self) =>
             self.hook(App, (_, visible) => {
-
-
                 if (visible) {
                     repopulate();
                     entry.text = "";
