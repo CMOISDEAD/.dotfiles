@@ -23,17 +23,17 @@ y = 0
 size = 14
 
 [font.bold]
-family = "Iosevka Nerd Font"
+family = "CaskaydiaMono NF"
 style = "Heavy"
 
 [font.bold_italic]
-family = "Iosevka Nerd Font"
+family = "CaskaydiaMono NF"
 style = "Heavy Italic"
 
 [font.italic]
-family = "Iosevka Nerd Font"
+family = "CaskaydiaMono NF"
 style = "Medium Italic"
 
 [font.normal]
-family = "Iosevka Nerd Font"
+family = "CaskaydiaMono NF"
 style = "Medium"
